@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.0"
+  },
+  "name": "imageguess",
+  "version": "1.0.0",
+  "description": "Guess the correct image",
+  "main": "kEnd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "image"
+  ],
+  "author": "Viktor Pisarenko",
+  "license": "MIT"
+}
