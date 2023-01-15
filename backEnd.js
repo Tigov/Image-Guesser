@@ -1,6 +1,7 @@
 const { response } = require("express");
 const express = require("express");
 const { request } = require("http");
+const fetch = require('node-fetch');
 const app = express();
 require('dotenv').config();
 app.listen(3000, () => console.log("Starting server http://localhost:3000"));

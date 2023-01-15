@@ -103,17 +103,17 @@ async function loadImages(){
     img2.src = img2Image;
     img3.src = img3Image;
     img4.src = img4Image;
-    if (img1Image.includes("Couldnt")){ //if error was given (api didnt have that image)
-        img1.textContent = img1Image;
+    if (img1Image.src.includes("Couldnt") && ((img1Image.srcElement.id[3]==1) && (chosenOne != 1))){ //if error was given (api didnt have that image)
+        img1.src = "fetching.png";
     }
-    if (img2Image.includes("Couldnt")){
-        img2.textContent = img2Image;
+    if (img2Image.src.includes("Couldnt") && ((img2Image.srcElement.id[3]==2) && (chosenOne != 2))){
+        img2.src = "fetching.png";
     }
-    if (img3Image.includes("Couldnt")){
-        img3.textContent = img3Image;
+    if (img3Image.src.includes("Couldnt") && ((img3Image.srcElement.id[3]==3) && (chosenOne != 3))){
+        img3.src = "fetching.png";
     }
-    if (img4Image.includes("Couldnt")){
-        img4.textContent = img4Image;
+    if (img4Image.src.includes("Couldnt") && ((img4Image.srcElement.id[3]==4) && (chosenOne != 4))){
+        img4.src = "fetching.png";
     }
 }
 
